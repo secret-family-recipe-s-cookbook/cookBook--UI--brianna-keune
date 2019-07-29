@@ -154,7 +154,8 @@ h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
-p {
+p,
+a {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
@@ -164,15 +165,89 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
 .nav {
-  width: 100%;
-  margin: 0% auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background: #780000;
+  color: #fffff0;
+}
+.nav nav {
+  width: 50%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  align-content: center;
+}
+.nav a {
+  text-decoration: none;
+  color: #fffff0;
+  font-size: 2rem;
+}
+.nav a:hover {
+  color: #a84848;
+}
+.mainContainer header {
+  width: 100%;
+  margin: 5% auto;
+  background-image: url("http://via.placeholder.com/2000x300");
+  background-repeat: no-repeat;
+}
+.mainContainer header button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mainContainer .content {
+  margin: 3% auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainContainer .content div {
+  width: 30%;
+}
+.mainContainer .services {
+  flex-direction: row-reverse;
+}
+.container h1 {
+  text-align: center;
+  margin-top: 2%;
+}
+.container .top-half,
+.container .bottom-half {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.container div {
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.container div h3 {
+  font-size: 3rem;
+  padding: 5%;
+}
+.container div p {
+  line-height: 25px;
+}
+footer {
+  padding: 3% 0%;
+  background: #a84848;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+}
+footer a {
+  text-decoration: none;
+  color: #fffff0;
 }
