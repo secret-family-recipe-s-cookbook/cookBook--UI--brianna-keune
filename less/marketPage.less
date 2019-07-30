@@ -17,6 +17,9 @@
            position: absolute;
            top: 25%;
            left: 55%;
+           @media @mobile{
+               font-size: 1.6rem;
+           }
         }
         button{
             .displayflex(center, center);
@@ -35,34 +38,65 @@
             &:hover{
                 background: @buttonHover;
             }
+            @media @mobile{
+                font-size: 1.6rem;
+                margin-right: 20px;
+            }
         }
     }
 
     .content{
         margin: 5% auto;
         .displayflex(space-around, center);
+        @media @mobile{
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
         div{
             width: 34%;
+            @media @mobile {
+                width: 40%;
+                margin: 3% auto;
+            }
             h2{
                 font-size: 3.8rem;
+                padding-bottom: 1%;
+                @media @mobile{
+                    font-size: 2.4rem;
+                }
             }
             p{
                 width: 80%;
                 font-size: 2.3rem;
                 .displayflex(center,center);
                 align-content: center;
+                @media @mobile{
+                    font-size: 1.2rem;
+                    width: 100%;
+                }
             }
         }
     }
     .services{
         flex-direction: row-reverse;
+        @media @mobile{
+            flex-direction: column;
+        }
         .text{
             padding-left: 50px;
+            @media @mobile{
+                padding-left: 0;
+            }
         }
+
     }
     img{
         width: 30%;
         height: auto;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        @media @mobile{
+            width: 40%;
+        }
     }
 }
