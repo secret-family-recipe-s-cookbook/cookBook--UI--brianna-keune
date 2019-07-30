@@ -1,14 +1,31 @@
-.nav{
-    .displayflex(space-around, center);
-    align-content: center;
-    background: @nav-bg;
-    color: @main-bg;
-    nav{
-        width: 50%;
-        .displayflex(space-evenly, center);
-    }
-    a{
-        .aLinks();
-        font-size: 2rem;
-    }
+.nav {
+  .displayflex(space-around, flex-end);
+  align-content: center;
+  background: @navBg;
+  color: @textLight;
+  font-family: Handlee;
+  height: 64px;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  img {
+    width: 60px;
+    .displayflex(center, flex-start);
+  }
+  h2 {
+    font-size: 3.6rem;
+  }
+  nav {
+    width: 23%;
+    .displayflex(space-between, flex-end);
+  }
+  a {
+    .aLinks();
+    font-size: 3.6rem;
+    line-height: 48px;
+    font-family: Handlee;
+  }
 }
