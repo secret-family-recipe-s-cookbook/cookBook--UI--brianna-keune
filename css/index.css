@@ -181,7 +181,7 @@ img {
   z-index: 9999;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .nav {
     flex-direction: column;
   }
@@ -192,7 +192,12 @@ img {
   align-items: center;
   width: 60px;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 800px) {
+  .nav img {
+    width: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
   .nav img {
     display: none;
   }
@@ -203,7 +208,12 @@ img {
   align-items: center;
   font-size: 3.6rem;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 800px) {
+  .nav h2 {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 500px) {
   .nav h2 {
     font-size: 1.8rem;
   }
@@ -214,7 +224,12 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 800px) {
+  .nav nav {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 500px) {
   .nav nav {
     width: 50%;
   }
@@ -229,7 +244,12 @@ img {
 .nav a:hover {
   color: #B59883;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 800px) {
+  .nav a {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 500px) {
   .nav a {
     font-size: 1.4rem;
   }
@@ -256,7 +276,7 @@ img {
   top: 25%;
   left: 55%;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .mainContainer header p {
     font-size: 1.2rem;
     top: 10%;
@@ -283,7 +303,7 @@ img {
 .mainContainer header button:hover {
   background: #C13B3B;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .mainContainer header button {
     font-size: 1.2rem;
     top: 29%;
@@ -297,7 +317,7 @@ img {
   justify-content: space-around;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .mainContainer .content {
     flex-direction: column;
     justify-content: center;
@@ -309,7 +329,7 @@ img {
   height: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .mainContainer .content img {
     width: 64%;
     margin: 0% auto;
@@ -319,7 +339,7 @@ img {
 .mainContainer .content div {
   width: 34%;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .mainContainer .content div {
     width: 100%;
     margin: 3% auto;
@@ -329,7 +349,7 @@ img {
   font-size: 3.8rem;
   padding-bottom: 1%;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .mainContainer .content div h2 {
     font-size: 2.4rem;
   }
@@ -342,7 +362,7 @@ img {
   align-items: center;
   align-content: center;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .mainContainer .content div p {
     font-size: 1.2rem;
     width: 100%;
@@ -352,7 +372,7 @@ img {
   font-size: 2.3rem;
   list-style-type: disc;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .mainContainer .content div ul {
     font-size: 1.2rem;
   }
@@ -361,7 +381,7 @@ img {
 .mainContainer .upComing {
   flex-direction: row-reverse;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .mainContainer .services,
   .mainContainer .upComing {
     flex-direction: column;
@@ -371,7 +391,7 @@ img {
 .mainContainer .upComing .text {
   padding-left: 50px;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .mainContainer .services .text,
   .mainContainer .upComing .text {
     padding-left: 0;
@@ -391,7 +411,7 @@ img {
   align-items: center;
   flex-direction: row;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .container .top-half,
   .container .bottom-half {
     flex-direction: column;
@@ -405,9 +425,9 @@ img {
   padding: 1%;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   width: 30%;
-  height: 260px;
+  height: 350px;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .container .top-half div,
   .container .bottom-half div {
     width: 80%;
@@ -417,6 +437,11 @@ img {
 .container .bottom-half .bri {
   width: 36%;
 }
+.container .top-half nav img,
+.container .bottom-half nav img {
+  margin: 10px;
+  width: 30px;
+}
 .container div {
   margin: 2% 3%;
   display: flex;
@@ -425,7 +450,7 @@ img {
   flex-direction: column;
   text-align: center;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .container div {
     margin-bottom: 30px;
   }
@@ -439,8 +464,10 @@ img {
   font-size: 1.8rem;
 }
 .container div p {
+  width: 79%;
   font-size: 1.4rem;
   line-height: 25px;
+  text-align: center;
 }
 footer {
   height: 64px;
@@ -452,7 +479,7 @@ footer {
   font-size: 1.6rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   footer {
     font-size: 1rem;
   }
@@ -471,7 +498,7 @@ footer p {
   font-size: 1.6rem;
   margin-left: 1%;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   footer p {
     font-size: 1rem;
     width: 28%;
@@ -483,7 +510,7 @@ footer .socialNav {
   justify-content: space-evenly;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   footer .socialNav {
     width: 35%;
     order: 1;
@@ -499,7 +526,7 @@ footer .legalNav {
   align-items: center;
   margin-right: 1%;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   footer .legalNav {
     width: 36%;
   }
@@ -507,7 +534,7 @@ footer .legalNav {
 footer nav img {
   width: 40px;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   footer nav img {
     width: 20px;
   }

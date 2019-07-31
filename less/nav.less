@@ -17,6 +17,9 @@
   img {
     .displayflex(center, center);
     width: 60px;
+    @media @tablet{
+      width: 40px;
+    }
     @media @mobile{
         display: none;
     }
@@ -24,6 +27,9 @@
   h2 {
     .displayflex(center, center);
     font-size: 3.6rem;
+    @media @tablet{
+      font-size: 2.4rem;
+    }
     @media @mobile{
         font-size: 1.8rem;
     }
@@ -31,6 +37,9 @@
   nav {
     width: 23%;
     .displayflex(space-between, center);
+    @media @tablet{
+      width: 30%;
+    }
     @media @mobile{
         width: 50%;
     }
@@ -40,6 +49,9 @@
     align-items: center;
     font-size: 3.6rem;
     font-family: Handlee;
+    @media @tablet{
+      font-size: 2.4rem;
+    }
     @media @mobile{
         font-size: 1.4rem;
     }
