@@ -1,0 +1,130 @@
+.mainContainer{
+    header{
+        margin-top: 64px;
+        background-color: rgba(81,82,98, 0.8);
+        z-index:0;
+        img{
+            width: 100%;
+            height: auto;
+            opacity: 0.8;
+        }
+        p{
+           color: @textLight;
+           font-family: Handlee;
+           font-size: 4rem;
+           .displayflex(center, center);
+           letter-spacing: .35rem;
+           position: absolute;
+           top: 25%;
+           left: 55%;
+           @media @tablet{
+               line-height: 4rem;
+               font-size: 3rem;
+           }
+           @media @mobile{
+            line-height: 2.3rem;
+            font-size: 1.6rem;
+           }
+        }
+        a{
+            .aLinks();
+        }
+        button{
+            .displayflex(center, center);
+            letter-spacing: .35rem;
+            position: absolute;
+            top: 69%;
+            left: 55%;
+            background-color: @buttonBg;
+            color:@textLight;
+            font-size: 3rem;
+            padding: 1% 5%;
+            border: 1px solid @textDark;
+            cursor: pointer;
+            border-radius: 6px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            &:hover{
+                background: @buttonHover;
+            }
+            @media @tablet{
+                position: relative;
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+            @media @mobile{
+                font-size: 1.2rem;
+                position: relative;
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    .content{
+        margin: 5% auto;
+        .displayflex(space-around, center);
+        @media @mobile{
+            flex-direction: column;
+            justify-content: center;
+            width: 83%;
+        }
+        img{
+            width: 30%;
+            height: auto;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            @media @mobile{
+                width: 64%;
+                margin: 0% auto;
+                margin-top:20px;
+            }
+        }
+        div{
+            width: 34%;
+            @media @mobile {
+                width: 100%;
+                margin: 3% auto;
+            }
+            h2{
+                font-size: 3.8rem;
+                padding-bottom: 1%;
+                @media @mobile{
+                    font-size: 2.4rem;
+                }
+            }
+            p{
+                width: 80%;
+                font-size: 2.3rem;
+                .displayflex(center,center);
+                align-content: center;
+                @media @mobile{
+                    font-size: 1.2rem;
+                    width: 100%;
+                }
+            }
+            ul{
+                font-size: 2.3rem;
+                list-style-type: disc;
+                @media @mobile{
+                    font-size: 1.2rem;
+                }
+            }
+
+        }
+    }
+    .services, .upComing{
+        flex-direction: row-reverse;
+        @media @mobile{
+            flex-direction: column;
+        }
+        .text{
+            padding-left: 50px;
+            @media @mobile{
+                padding-left: 0;
+            }
+        }
+
+    }
+
+}
