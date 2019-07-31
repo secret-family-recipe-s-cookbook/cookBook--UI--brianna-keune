@@ -17,11 +17,17 @@
            position: absolute;
            top: 25%;
            left: 55%;
-           @media @mobile{
-               font-size: 1.2rem;
-               top: 10%;
-               left: 50%;
+           @media @tablet{
+               line-height: 4rem;
+               font-size: 3rem;
            }
+           @media @mobile{
+            line-height: 2.3rem;
+            font-size: 1.6rem;
+           }
+        }
+        a{
+            .aLinks();
         }
         button{
             .displayflex(center, center);
@@ -40,11 +46,18 @@
             &:hover{
                 background: @buttonHover;
             }
+            @media @tablet{
+                position: relative;
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
             @media @mobile{
                 font-size: 1.2rem;
-                top:29%;
-                left: 50%;
-                padding: 1% 3%;
+                position: relative;
+                width: 100%;
+                top: 0;
+                left: 0;
             }
         }
     }
