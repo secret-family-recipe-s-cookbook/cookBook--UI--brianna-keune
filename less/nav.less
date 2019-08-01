@@ -1,12 +1,12 @@
 .nav {
-  .displayflex(space-around, center);
+  .displayflex(space-between, center);
   align-content: center;
   background: @navBg;
   color: @textLight;
   font-family: Handlee;
   height: 64px;
   overflow: hidden;
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 9999;
@@ -15,9 +15,11 @@
   @media @mobile{
       flex-direction: column;
   }
-  img {
+  .logo {
+    border-style: none;
     .displayflex(center, center);
     width: 60px;
+    margin-left: 25px;
     @media @tablet{
       width: 40px;
     }
@@ -26,8 +28,9 @@
     }
   }
   nav {
-    width: 30%;
+    width: 25%;
     .displayflex(space-between, center);
+    margin-right: 25px;
     @media @tablet{
       width: 30%;
     }
