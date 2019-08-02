@@ -1,65 +1,68 @@
-.container{
-    margin-top:84px;
-    h1{
-        font-size: 3.8rem;
-        text-align: center;
+.container {
+  margin-top: 84px;
+  .chi {
+    display: none;
+  }
+  h1 {
+    font-size: 3.8rem;
+    text-align: center;
+  }
+  .top-half,
+  .bottom-half {
+    .displayflex(space-around, center);
+    flex-direction: row;
+    @media @tablet {
+      flex-wrap: wrap;
     }
-    .top-half, .bottom-half{
-        .displayflex(space-around, center);
-        flex-direction: row;
-        @media @tablet{
-            flex-wrap: wrap;
-        }
-        @media @mobile{
-            flex-direction: column;
-            width: 80%;
-            margin: 4% auto;
-        }
-        div{
-            background: @ingContainer;
-            padding: 1%;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-            width: 30%;
-            height: 350px;
-            // @media @tablet{
-            //     width: 80%:
-            // }
-            @media @mobile{
-                width: 80%;
-
-            }
-        }
-        .bri{
-            width: 36%;
-        }
-        nav{
-            img{
-                margin:10px;
-                width: 30px;
-            }
-        }
+    @media @mobile {
+      flex-direction: column;
+      width: 80%;
+      margin: 4% auto;
     }
-    div{
-        margin: 2% 3%;
-        .displayflex(center, center);
-        flex-direction: column;
-        text-align: center;
-        @media @mobile{
-            margin-bottom: 30px;
-        }
-        h3{
-            font-size: 2.5rem;
-            padding: 5%;
-            text-align: center;
-        }
-        h4{
-            font-size: 1.8rem;
-        }
-        p{
-            width: 79%;
-            font-size: 1.4rem;
-            line-height: 25px;
-            text-align: center;
-        }
+    div {
+      background: @ingContainer;
+      padding: 1%;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      width: 30%;
+      height: 350px;
+      // @media @tablet{
+      //     width: 80%:
+      // }
+      @media @mobile {
+        width: 80%;
+      }
     }
+    .bri {
+      width: 36%;
+    }
+    nav {
+      img {
+        margin: 10px;
+        width: 30px;
+      }
+    }
+  }
+  div {
+    margin: 2% 3%;
+    .displayflex(center, center);
+    flex-direction: column;
+    text-align: center;
+    @media @mobile {
+      margin-bottom: 30px;
+    }
+    h3 {
+      font-size: 2.5rem;
+      padding: 5%;
+      text-align: center;
+    }
+    h4 {
+      font-size: 1.8rem;
+    }
+    p {
+      width: 79%;
+      font-size: 1.4rem;
+      line-height: 25px;
+      text-align: center;
+    }
+  }
 }

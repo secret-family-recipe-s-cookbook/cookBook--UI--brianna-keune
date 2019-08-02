@@ -7,7 +7,11 @@
 
 ## Current Features:
 
--
+- Onboarding process for a new user--Being able to log in securely
+- Ability to enter a new Recipe, including title, source (ie Grandma Ethel), ingredients, instructions, and category (dinner, chicken, pasta, dessert, etc.) and edit or delete it later.
+- Homepage to view all entered recipes.
+- Ability to search for recipes by title or tagged categories.
+
 
 ## Technologies Used
 
@@ -46,7 +50,7 @@
 ##MVP:
 - [x]  You will build a multi-page marketing website that matches the theme chosen by your group and provides the user with details about the product your team has selected to build.
 - [x]  Your marketing website must include responsive mobile and desktop screen widths. Please see the "Responsiveness" portion of your rubric for more information on this.
-- [ ]  The call to action on the website should be a login button that links the user over to the React application that your Front End Architect is building.
+- [x]  The call to action on the website should be a login button that links the user over to the React application that your Front End Architect is building.
 - [x]  Your marketing website must be hosted on a hosting platform like "Netlify" or "Github Pages".
 - [x]  For this Marketing site's home page you need to have content and copy that relates to the product that your team is working on.
 - [x]  Descriptions about the product and about the features it provides would be key.
@@ -55,4 +59,4 @@
 - [ ]  Student's work demonstrates that all MVP features were built and the student went above and beyond the project.
 - [ ]  Pair programmed with the Front End Architect.
 - [ ]  Student's code is clean and organized, proper indentation is apparent, a library or framwork was rearched and used.
-- [ ]  Tablet views look professional at 800px and above. Responsive units are used for font-sizing.
+- [x]  Tablet views look professional at 800px and above. Responsive units are used for font-sizing.

@@ -1,38 +1,42 @@
 .nav {
-  .displayflex(space-around, center);
+  .displayflex(space-between, center);
   align-content: center;
   background: @navBg;
   color: @textLight;
   font-family: Handlee;
   height: 64px;
   overflow: hidden;
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 9999;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  @media @mobile{
-      flex-direction: column;
+  @media @mobile {
+    flex-direction: column;
   }
-  img {
+  .logo {
+    border-style: none;
     .displayflex(center, center);
     width: 60px;
-    @media @tablet{
+    margin-left: 25px;
+    @media @tablet {
       width: 40px;
     }
-    @media @mobile{
-        display: none;
+    @media @mobile {
+      display: none;
     }
   }
   nav {
-    width: 30%;
+    width: 27%;
     .displayflex(space-between, center);
-    @media @tablet{
+    margin-right: 25px;
+    @media @tablet {
       width: 30%;
     }
-    @media @mobile{
-        width: 30%;
+    @media @mobile {
+      width: 30%;
+      margin-left: 30px;
     }
   }
   a {
@@ -40,11 +44,16 @@
     align-items: center;
     font-size: 3.6rem;
     font-family: Handlee;
-    @media @tablet{
+    @media @tablet {
       font-size: 2.4rem;
     }
+    @media @mobile {
+      font-size: 1.4rem;
+    }
+  }
+  .site {
     @media @mobile{
-        font-size: 1.4rem;
+      font-size: 2.4rem;
     }
   }
 }

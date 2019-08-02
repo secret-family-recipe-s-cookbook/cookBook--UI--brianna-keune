@@ -1,63 +1,63 @@
-footer{
-    height:64px;
-    background:@navBg;
-    color: @textLight;
-    .displayflex(space-around, center);
+footer {
+  height: 64px;
+  background: @navBg;
+  color: @textLight;
+  .displayflex(space-around, center);
+  font-size: 1.6rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @media @mobile {
+    font-size: 1rem;
+  }
+  nav a,
+  a {
+    .aLinks();
+  }
+  p {
+    width: 20%;
     font-size: 1.6rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    @media @mobile{
-        font-size:1rem;
-        
+    margin-left: 1%;
+    @media @tablet {
+      width: 30%;
     }
-    nav a, a{
-        .aLinks();
+    @media @mobile {
+      font-size: 1rem;
+      width: 28%;
     }
-    p{
-        width:20%;
-        font-size: 1.6rem;
-        margin-left: 1%;
-        @media @tablet{
-            width: 30%;
-        }
-        @media @mobile{
-            font-size: 1rem;
-            width: 28%;
-        }
+  }
+  .socialNav {
+    width: 37%;
+    .displayflex(space-evenly, center);
+    @media @tablet {
+      width: 37%;
     }
-    .socialNav{
-        width: 35%;
-        .displayflex(space-evenly, center);
-        @media @tablet{
-            width: 37%;
-        }
-        @media @mobile{
-            width: 35%;
-            order: 1;
-            p{
-                display:none;
-            }
-        }
+    @media @mobile {
+      width: 35%;
+      order: 1;
+      p {
+        display: none;
+      }
     }
-    .legalNav{
-        width: 25%;
-        .displayflex(space-between, center);
-        margin-right: 1%;
-        @media @tablet{
-            width: 31%;
-        }
-        @media @mobile{
-            width: 36%;
-        }
+  }
+  .legalNav {
+    width: 25%;
+    .displayflex(space-between, center);
+    margin-right: 1%;
+    @media @tablet {
+      width: 31%;
     }
-    nav{
-        img{
-            width: 40px;
-            @media @tablet{
-                width: 30px;
-            }
-            @media @mobile{
-                width: 20px;
-            }
-        }
+    @media @mobile {
+      width: 36%;
     }
+  }
+  nav {
+    img {
+      width: 40px;
+      @media @tablet {
+        width: 30px;
+      }
+      @media @mobile {
+        width: 20px;
+      }
+    }
+  }
 }
