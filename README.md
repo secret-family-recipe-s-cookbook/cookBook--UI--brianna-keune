@@ -1,9 +1,7 @@
 # cookBook--UI--brianna-keune
 # cookbook-UI-Brianna
 
-# Welcome to Secret Family Recipes Cookbook, [insert text]
-
-### This app allows [insert text].
+# Welcome to Secret Family Recipes Cookbook
 
 ## Current Features:
 
